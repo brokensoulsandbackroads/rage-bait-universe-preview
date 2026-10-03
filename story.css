@@ -1,0 +1,123 @@
+:root{
+  --rb-green:#93ff00;
+  --rb-orange:#ff6412;
+  --rb-pink:#ff2ba9;
+  --rb-cyan:#25d9ff;
+  --rb-purple:#9c46ff;
+  --rb-paper:#eee9dc;
+}
+.universe-page{background:#050605;color:#f6f7f3}
+.universe-page::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:80;background-image:linear-gradient(rgba(255,255,255,.015) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.012) 1px,transparent 1px);background-size:4px 4px;mix-blend-mode:screen}
+.universe-header{height:74px;border-bottom-color:#232823;background:#070807f2}
+.universe-logo img{display:block;height:52px;width:auto}
+.universe-nav{display:flex;gap:28px;align-items:center}
+.universe-nav a{position:relative;color:#e9ece6;text-decoration:none;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}
+.universe-nav a::after{content:"";position:absolute;left:0;right:100%;bottom:-10px;height:3px;background:var(--rb-green);transition:right .2s}
+.universe-nav a:hover,.universe-nav a.active{color:var(--rb-green)}
+.universe-nav a:hover::after,.universe-nav a.active::after{right:0}
+.shop-pill{background:var(--rb-green);color:#071005;text-decoration:none;font-weight:900;text-transform:uppercase;font-size:11px;padding:11px 14px;letter-spacing:.04em}
+.universe-menu-toggle{display:none;background:#111;border:1px solid #303530;width:40px;height:40px;padding:8px}
+.universe-menu-toggle span{display:block;height:2px;background:#fff;margin:5px 0}
+.universe-hero{min-height:650px;padding:58px 4vw 46px;display:grid;grid-template-columns:.92fr 1.38fr;gap:24px;align-items:center;position:relative;overflow:hidden;background:radial-gradient(circle at 72% 35%,rgba(20,110,84,.2),transparent 34%),radial-gradient(circle at 90% 85%,rgba(255,43,169,.08),transparent 25%),#080908}
+.universe-hero::before{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 0 46%,rgba(147,255,0,.035) 46% 47%,transparent 47%),repeating-linear-gradient(0deg,transparent 0 42px,rgba(255,255,255,.017) 43px);pointer-events:none}
+.universe-hero-copy,.universe-hero-art{position:relative;z-index:2}
+.paint-kicker{font-family:Anton,sans-serif;font-size:clamp(28px,3.1vw,48px);margin:0 0 4px;transform:rotate(-1deg)}
+.universe-hero h1{font-family:Anton,sans-serif;font-size:clamp(68px,8vw,138px);line-height:.78;letter-spacing:-.025em;margin:0 0 24px;transform:skew(-3deg)}
+.universe-hero h1 span{color:var(--rb-green);text-shadow:5px 5px 0 #101;position:relative}
+.origin-line{color:var(--rb-orange);font-weight:900;font-size:15px;letter-spacing:.04em;margin:0 0 3px}
+.origin-sub{font-weight:800;margin:0 0 18px;color:#fff}
+.hero-intro{max-width:620px;color:#c8cec4;line-height:1.65;margin:0}
+.hero-buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+.comic-button{border:0;display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:0 19px;text-decoration:none;text-transform:uppercase;font-weight:900;letter-spacing:.035em;cursor:pointer;font-family:Inter,sans-serif}
+.comic-button.acid{background:var(--rb-green);color:#071005;box-shadow:5px 5px 0 #1a1d18}
+.comic-button.ghost{background:#0e100e;color:#fff;border:1px solid #4b5149}
+.universe-hero-art{min-height:530px}
+.hero-grid{position:absolute;inset:0;display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:repeat(10,1fr);gap:10px;transform:rotate(.5deg)}
+.hero-character{position:relative;overflow:hidden;border:1px solid #2d332d;background:#0e110e;box-shadow:0 16px 28px rgba(0,0,0,.4)}
+.hero-character::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,transparent 52%,rgba(0,0,0,.87) 100%)}
+.hero-character-art{position:absolute;inset:0;background:#141714;display:grid;place-items:center;font-family:Anton,sans-serif;font-size:84px}
+.hero-character-label{position:absolute;left:12px;bottom:10px;z-index:3;text-shadow:2px 2px 0 #000}
+.hero-character-label strong{display:block;font-family:Anton,sans-serif;font-size:25px;letter-spacing:.03em}
+.hero-character-label small{font-size:10px;font-weight:800;text-transform:uppercase;color:#dce1d8}
+.hero-character.kingpin{grid-column:5/10;grid-row:1/7;border-color:#ff771f}
+.hero-character.minorz{grid-column:1/6;grid-row:3/10;border-color:var(--rb-green)}
+.hero-character.littlemac{grid-column:9/13;grid-row:1/7;border-color:var(--rb-pink)}
+.hero-character.ragz{grid-column:6/10;grid-row:6/11;border-color:var(--rb-orange)}
+.hero-character.wizz{grid-column:10/13;grid-row:7/11;border-color:var(--rb-purple)}
+.hero-character.scab{grid-column:3/6;grid-row:8/11;border-color:var(--rb-orange)}
+.hero-character.kingpin strong{color:var(--rb-orange)} .hero-character.minorz strong{color:var(--rb-green)} .hero-character.littlemac strong{color:var(--rb-pink)} .hero-character.ragz strong{color:var(--rb-orange)} .hero-character.wizz strong{color:#bd72ff}.hero-character.scab strong{color:#ff7a25}
+.remote-photo,.cast-portrait,.merch-image{background-position:center;background-repeat:no-repeat;background-size:cover}
+.kingpin-photo{background-image:linear-gradient(180deg,transparent 50%,rgba(0,0,0,.55)),url("https://raw.githubusercontent.com/brokensoulsandbackroads/rage-bait-apparel/main/mockups/kingpin1.png")}
+.minorz-photo{background-image:linear-gradient(180deg,transparent 50%,rgba(0,0,0,.55)),url("https://raw.githubusercontent.com/brokensoulsandbackroads/rage-bait-apparel/main/assets/neon_outlaw_hyena_sticker_art.png")}
+.littlemac-photo{background-image:linear-gradient(180deg,transparent 50%,rgba(0,0,0,.55)),url("https://raw.githubusercontent.com/brokensoulsandbackroads/rage-bait-apparel/main/mockups/Pretty_Little_Problem_tee_front_mockup.png")}
+.ragz-photo{background-image:linear-gradient(180deg,transparent 50%,rgba(0,0,0,.55)),url("https://raw.githubusercontent.com/brokensoulsandbackroads/rage-bait-apparel/main/mockups/virtual-degenerate-hoodie-front.webp")}
+.placeholder-character .hero-character-art{background:radial-gradient(circle at 50% 35%,#2c2f33,#090a09 65%)}
+.placeholder-character.wizz .hero-character-art{color:var(--rb-purple);box-shadow:inset 0 0 55px rgba(37,217,255,.18)}
+.placeholder-character.scab .hero-character-art{color:var(--rb-orange);box-shadow:inset 0 0 55px rgba(255,100,18,.15)}
+.hero-graffiti{position:absolute;z-index:5;font-family:Anton,sans-serif;line-height:.95;letter-spacing:.04em;opacity:.75}
+.g1{right:-8px;top:8px;font-size:19px;transform:rotate(-4deg);color:#d8ddd4}.g2{right:20px;bottom:-8px;font-size:19px;transform:rotate(3deg);color:var(--rb-orange)}
+.ripped-divider{height:18px;background:linear-gradient(135deg,#050605 0 45%,#e9ece5 46% 51%,#050605 52% 100%);background-size:26px 18px;opacity:.95}
+.section-shell{padding:54px 4vw;border-bottom:1px solid #252a25;background:#070807}
+.comic-section-title{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.comic-section-title>span{display:inline-block;background:var(--rb-orange);color:#090a08;padding:7px 14px;font-family:Anton,sans-serif;font-size:23px;letter-spacing:.035em;transform:rotate(-1deg);box-shadow:4px 4px 0 #181b17}
+.comic-section-title small{font-size:10px;font-weight:900;letter-spacing:.13em;color:#aaa}
+.arc-feature{margin-top:20px;display:grid;grid-template-columns:minmax(230px,.72fr) 1.28fr .7fr;gap:18px;align-items:stretch}
+.issue-cover{position:relative;min-height:390px;border:1px solid #596052;background:#131713;overflow:hidden;padding:18px;box-shadow:8px 8px 0 #131512}
+.issue-cover::after{content:"";position:absolute;inset:0;border:10px solid rgba(255,255,255,.035);pointer-events:none}
+.issue-number{position:absolute;left:12px;bottom:12px;z-index:4;background:var(--rb-green);color:#081006;padding:8px;font-family:Anton,sans-serif;font-size:22px}
+.issue-spray{position:relative;z-index:4;font-family:Anton,sans-serif;color:var(--rb-orange);font-size:42px;line-height:.9;transform:rotate(-5deg);text-shadow:3px 3px 0 #000}
+.issue-cover h2{position:relative;z-index:4;font-family:Anton,sans-serif;font-size:52px;line-height:.84;margin-top:12px}
+.issue-cover p{position:absolute;right:12px;bottom:14px;z-index:4;width:44%;font-weight:900;font-size:11px;line-height:1.1;text-align:right}
+.cover-art{position:absolute;inset:0;background-position:center bottom;background-size:cover;filter:saturate(1.1) contrast(1.05);opacity:.62}
+.minorz-cover{background-image:linear-gradient(0deg,#060706 0,transparent 65%),url("https://raw.githubusercontent.com/brokensoulsandbackroads/rage-bait-apparel/main/assets/neon_outlaw_hyena_sticker_art.png")}
+.arc-copy{border:1px solid #272d26;padding:30px;background:radial-gradient(circle at 100% 100%,rgba(147,255,0,.06),transparent 35%),#0c0e0c}
+.arc-overline{color:var(--rb-orange);font-weight:900;letter-spacing:.14em;font-size:11px;margin:0 0 5px}
+.arc-copy h2{font-family:Anton,sans-serif;font-size:clamp(44px,5vw,76px);line-height:.9;margin:0 0 22px}
+.arc-copy>p{color:#c8cec4;line-height:1.65;max-width:780px}
+.arc-quote{color:#fff!important;font-weight:900;font-size:18px;font-style:italic;border-left:4px solid var(--rb-orange);padding-left:15px}
+.arc-side-panel{position:relative;min-height:390px;border:1px solid #272d26;padding:24px;display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(145deg,rgba(255,100,18,.08),transparent 50%),#0d0e0d}
+.hand-note{font-family:Anton,sans-serif;color:var(--rb-orange);font-size:42px;line-height:.87;transform:rotate(-4deg)}
+.ego-meter span,.ego-meter strong{display:block;font-size:10px;font-weight:900;letter-spacing:.12em}.ego-meter strong{color:var(--rb-green);margin-top:8px}
+.meter-track{height:15px;background:#191c18;border:1px solid #3b4138;margin-top:7px}.meter-fill{height:100%;width:89%;background:linear-gradient(90deg,var(--rb-green),#ffe14c,var(--rb-orange))}
+.section-row-title{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:20px}
+.text-button{border:0;background:transparent;color:#d7dcd3;font-weight:900;font-size:10px;letter-spacing:.09em;cursor:pointer;text-decoration:none}.text-button:hover{color:var(--rb-green)}
+.chapter-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.chapter-card{min-height:310px;border:1px solid #3a4038;background:#101210;color:#fff;text-align:left;padding:0;position:relative;overflow:hidden;cursor:pointer;transition:transform .18s,border-color .18s}
+.chapter-card:hover,.chapter-card.active{transform:translateY(-5px);border-color:var(--rb-green)}
+.chapter-art{position:absolute;inset:0;opacity:.45;background-size:cover;background-position:center}
+.trolls-art{background-image:linear-gradient(0deg,#050605,transparent),url("https://raw.githubusercontent.com/brokensoulsandbackroads/rage-bait-apparel/main/mockups/Pretty_Little_Problem_tee_front_mockup.png")}
+.drama-art{background:radial-gradient(circle at 35% 25%,rgba(156,70,255,.55),transparent 28%),linear-gradient(135deg,#201228,#090a09)}
+.protocol-art{background-image:linear-gradient(0deg,#050605,transparent),url("https://raw.githubusercontent.com/brokensoulsandbackroads/rage-bait-apparel/main/assets/neon_outlaw_hyena_sticker_art.png")}
+.ego-art{background:radial-gradient(circle at 65% 35%,rgba(255,100,18,.48),transparent 27%),repeating-linear-gradient(125deg,#0d0e0d 0 18px,#15100d 19px 36px)}
+.chapter-no{position:absolute;top:12px;left:12px;z-index:4;background:#f2f4ef;color:#070807;padding:6px 8px;font-family:Anton,sans-serif;font-size:17px}
+.chapter-card strong{position:absolute;left:16px;bottom:42px;z-index:4;font-family:Anton,sans-serif;font-size:34px;line-height:.87;text-shadow:3px 3px 0 #000}
+.chapter-card small{position:absolute;left:16px;bottom:17px;z-index:4;color:#c7cdc3;font-size:10px;font-weight:800}
+.cast-layout{display:grid;grid-template-columns:1.15fr .85fr;gap:18px}
+.cast-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.cast-card{background:#0d0f0d;border:1px solid #30362e;color:#fff;padding:16px 10px;cursor:pointer;text-align:center;transition:.18s}
+.cast-card:hover,.cast-card.active{border-color:var(--rb-green);transform:translateY(-3px)}
+.cast-portrait{width:112px;height:112px;border-radius:50%;margin:0 auto 10px;display:grid;place-items:center;border:4px solid var(--rb-green);background-color:#161916;font-family:Anton,sans-serif;font-size:54px;overflow:hidden}
+.cast-card:nth-child(3) .cast-portrait{border-color:var(--rb-pink)}.cast-card:nth-child(4) .cast-portrait{border-color:var(--rb-purple)}.cast-card:nth-child(5) .cast-portrait,.cast-card:nth-child(6) .cast-portrait{border-color:var(--rb-orange)}
+.cast-card strong{display:block;font-family:Anton,sans-serif;font-size:21px;letter-spacing:.03em}.cast-card small{color:#aeb5aa;font-size:10px}
+.wizz-placeholder{color:#c57bff;background:radial-gradient(circle,#262134,#0c0d0c 70%)}.scab-placeholder{color:#ff7620;background:radial-gradient(circle,#2b1b13,#0c0d0c 70%)}
+.cast-profile{border:1px solid #30362e;background:linear-gradient(135deg,#101310,#080908);padding:30px;min-height:330px;position:relative;overflow:hidden}
+.cast-profile::after{content:"RAGE\A BAIT";white-space:pre;position:absolute;right:-8px;bottom:-20px;font-family:Anton,sans-serif;font-size:84px;line-height:.75;color:rgba(147,255,0,.045);transform:rotate(-6deg)}
+.profile-kicker{font-size:10px;color:var(--rb-orange);font-weight:900;letter-spacing:.16em}
+.cast-profile h2,.chapter-dialog h2{font-family:Anton,sans-serif;font-size:58px;margin:8px 0 5px;line-height:.9}
+.profile-role{color:var(--rb-green);font-weight:900}.cast-profile>p:not(.profile-role){color:#bec5ba;line-height:1.65;max-width:680px;position:relative;z-index:2}
+.profile-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px;position:relative;z-index:2}.profile-tags span{border:1px solid #384036;background:#0b0d0b;padding:7px 9px;font-size:9px;font-weight:900;letter-spacing:.08em}
+.recap-coming{display:grid;grid-template-columns:1.25fr .75fr;gap:18px}
+.recap-panels{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}.recap-panels article{min-height:170px;border:1px solid #373d35;padding:16px;display:flex;flex-direction:column;justify-content:space-between;background:repeating-linear-gradient(-45deg,#0e100e 0 9px,#111411 10px 20px)}.recap-panels span{font-family:Anton,sans-serif;font-size:58px;color:rgba(255,255,255,.13)}.recap-panels p{font-weight:800;font-size:13px;line-height:1.35}
+.coming-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:18px}.locked-arc{min-height:170px;border:1px solid #30362e;padding:15px;background:#0d0f0d;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}.locked-arc>span{font-size:24px}.locked-arc strong{font-family:Anton,sans-serif;font-size:24px;line-height:.9;margin:10px 0}.locked-arc small{font-size:9px;color:#8f968b;font-weight:900}
+.story-merch-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.story-product{border:1px solid #30362e;text-decoration:none;color:#fff;background:#0d0f0d;padding-bottom:13px}.story-product:hover{border-color:var(--rb-green)}.merch-image{height:260px;background-color:#151815;background-size:contain}.kingpin-merch{background-image:url("https://raw.githubusercontent.com/brokensoulsandbackroads/rage-bait-apparel/main/mockups/kingpin1.png")}.minorz-merch{background-image:url("https://raw.githubusercontent.com/brokensoulsandbackroads/rage-bait-apparel/main/mockups/outlaw-tee-front-male-v3.webp")}.littlemac-merch{background-image:url("https://raw.githubusercontent.com/brokensoulsandbackroads/rage-bait-apparel/main/mockups/Pretty_Little_Problem_tee_front_mockup.png")}.ragz-merch{background-image:url("https://raw.githubusercontent.com/brokensoulsandbackroads/rage-bait-apparel/main/mockups/virtual-degenerate-hoodie-front.webp")}.story-product strong,.story-product span{display:block;padding:0 12px}.story-product strong{font-family:Anton,sans-serif;font-size:20px;margin-top:10px}.story-product span{font-size:10px;color:#aeb5aa}
+.universe-footer{display:grid;grid-template-columns:auto 1fr auto auto;gap:28px;align-items:center;background:#050605}.universe-footer img{height:45px}.universe-footer nav{display:flex;gap:14px}.universe-footer a{color:#c8cec4;text-decoration:none;font-size:10px;font-weight:900;text-transform:uppercase}.universe-footer strong{font-family:Anton,sans-serif;color:#e4e8e0;font-size:17px;line-height:.85;text-align:right}
+.chapter-dialog{width:min(650px,92vw);background:#090b09;color:#fff;border:1px solid #4a5147;padding:35px;box-shadow:0 25px 80px #000}.chapter-dialog::backdrop{background:rgba(0,0,0,.8)}.dialog-close{position:absolute;right:13px;top:10px;background:none;color:#fff;border:0;font-size:32px;cursor:pointer}.chapter-dialog p{color:#c3cac0;line-height:1.6}.dialog-status{margin-top:22px;border-top:1px solid #333a31;padding-top:15px;font-size:10px;font-weight:900;letter-spacing:.12em;color:var(--rb-green)}.dialog-status span{display:inline-block;width:8px;height:8px;background:var(--rb-orange);border-radius:50%;margin-right:7px}
+@media(max-width:1080px){
+  .universe-hero{grid-template-columns:1fr}.universe-hero-art{min-height:560px}.arc-feature{grid-template-columns:.8fr 1.2fr}.arc-side-panel{grid-column:1/-1;min-height:160px;display:grid;grid-template-columns:1fr 1fr;align-items:end}.hand-note{font-size:34px}.chapter-grid{grid-template-columns:repeat(2,1fr)}.recap-coming{grid-template-columns:1fr}.story-merch-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:800px){
+  .universe-menu-toggle{display:block;margin-left:auto}.universe-nav{position:absolute;top:100%;left:0;right:0;background:#070807;border-bottom:1px solid #30362e;padding:14px 5vw;display:none;flex-direction:column;align-items:stretch;gap:0}.universe-nav.open{display:flex}.universe-nav a{padding:12px 0}.universe-nav a::after{display:none}.shop-pill{margin-left:8px}.cast-layout{grid-template-columns:1fr}.cast-grid{grid-template-columns:repeat(2,1fr)}.universe-footer{grid-template-columns:1fr;text-align:center}.universe-footer img{margin:auto}.universe-footer nav{justify-content:center;flex-wrap:wrap}.universe-footer strong{text-align:center}
+}
+@media(max-width:620px){
+  .universe-header{height:66px;padding:0 4vw}.universe-logo img{height:42px}.shop-pill{font-size:9px;padding:10px}.universe-hero{padding:42px 5vw 30px}.universe-hero h1{font-size:64px}.paint-kicker{font-size:28px}.universe-hero-art{min-height:520px}.hero-grid{gap:5px}.hero-character-label{left:7px;bottom:7px}.hero-character-label strong{font-size:17px}.hero-character-label small{display:none}.hero-character.kingpin{grid-column:5/11}.hero-character.minorz{grid-column:1/7}.hero-character.littlemac{grid-column:9/13}.hero-character.ragz{grid-column:6/11}.hero-character.wizz{grid-column:10/13}.hero-character.scab{grid-column:2/6}.hero-graffiti{display:none}.section-shell{padding:42px 5vw}.comic-section-title>span{font-size:19px}.arc-feature{grid-template-columns:1fr}.issue-cover{min-height:360px}.arc-side-panel{grid-column:auto;display:flex;min-height:180px}.arc-copy{padding:24px}.arc-copy h2{font-size:48px}.chapter-grid{grid-template-columns:1fr 1fr}.chapter-card{min-height:240px}.chapter-card strong{font-size:27px}.cast-grid{grid-template-columns:repeat(2,1fr)}.cast-portrait{width:88px;height:88px}.recap-panels{grid-template-columns:1fr}.coming-grid{grid-template-columns:1fr 1fr}.story-merch-grid{grid-template-columns:1fr 1fr}.merch-image{height:190px}.section-row-title{align-items:flex-start}.cast-profile h2{font-size:46px}
+}
