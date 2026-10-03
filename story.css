@@ -47,10 +47,10 @@
 .hero-character.scab{grid-column:3/6;grid-row:8/11;border-color:var(--rb-orange)}
 .hero-character.kingpin strong{color:var(--rb-orange)} .hero-character.minorz strong{color:var(--rb-green)} .hero-character.littlemac strong{color:var(--rb-pink)} .hero-character.ragz strong{color:var(--rb-orange)} .hero-character.wizz strong{color:#bd72ff}.hero-character.scab strong{color:#ff7a25}
 .remote-photo,.cast-portrait,.merch-image{background-position:center;background-repeat:no-repeat;background-size:cover}
-.kingpin-photo{background-image:linear-gradient(180deg,transparent 50%,rgba(0,0,0,.55)),url("https://raw.githubusercontent.com/brokensoulsandbackroads/rage-bait-apparel/main/mockups/kingpin1.png")}
-.minorz-photo{background-image:linear-gradient(180deg,transparent 50%,rgba(0,0,0,.55)),url("https://raw.githubusercontent.com/brokensoulsandbackroads/rage-bait-apparel/main/assets/neon_outlaw_hyena_sticker_art.png")}
-.littlemac-photo{background-image:linear-gradient(180deg,transparent 50%,rgba(0,0,0,.55)),url("https://raw.githubusercontent.com/brokensoulsandbackroads/rage-bait-apparel/main/mockups/Pretty_Little_Problem_tee_front_mockup.png")}
-.ragz-photo{background-image:linear-gradient(180deg,transparent 50%,rgba(0,0,0,.55)),url("https://raw.githubusercontent.com/brokensoulsandbackroads/rage-bait-apparel/main/mockups/virtual-degenerate-hoodie-front.webp")}
+.kingpin-photo{background-image:linear-gradient(180deg,transparent 50%,rgba(0,0,0,.55)),url("story-assets/characters/portraits/kingpin-portrait.png")}
+.minorz-photo{background-image:linear-gradient(180deg,transparent 50%,rgba(0,0,0,.55)),url("story-assets/characters/heroes/minorz-hero.png")}
+.littlemac-photo{background-image:linear-gradient(180deg,transparent 50%,rgba(0,0,0,.55)),url("story-assets/characters/heroes/littlemac-hero.png")}
+.ragz-photo{background-image:linear-gradient(180deg,transparent 50%,rgba(0,0,0,.55)),url("story-assets/characters/heroes/ragz-hero.png")}
 .placeholder-character .hero-character-art{background:radial-gradient(circle at 50% 35%,#2c2f33,#090a09 65%)}
 .placeholder-character.wizz .hero-character-art{color:var(--rb-purple);box-shadow:inset 0 0 55px rgba(37,217,255,.18)}
 .placeholder-character.scab .hero-character-art{color:var(--rb-orange);box-shadow:inset 0 0 55px rgba(255,100,18,.15)}
@@ -121,3 +121,20 @@
 @media(max-width:620px){
   .universe-header{height:66px;padding:0 4vw}.universe-logo img{height:42px}.shop-pill{font-size:9px;padding:10px}.universe-hero{padding:42px 5vw 30px}.universe-hero h1{font-size:64px}.paint-kicker{font-size:28px}.universe-hero-art{min-height:520px}.hero-grid{gap:5px}.hero-character-label{left:7px;bottom:7px}.hero-character-label strong{font-size:17px}.hero-character-label small{display:none}.hero-character.kingpin{grid-column:5/11}.hero-character.minorz{grid-column:1/7}.hero-character.littlemac{grid-column:9/13}.hero-character.ragz{grid-column:6/11}.hero-character.wizz{grid-column:10/13}.hero-character.scab{grid-column:2/6}.hero-graffiti{display:none}.section-shell{padding:42px 5vw}.comic-section-title>span{font-size:19px}.arc-feature{grid-template-columns:1fr}.issue-cover{min-height:360px}.arc-side-panel{grid-column:auto;display:flex;min-height:180px}.arc-copy{padding:24px}.arc-copy h2{font-size:48px}.chapter-grid{grid-template-columns:1fr 1fr}.chapter-card{min-height:240px}.chapter-card strong{font-size:27px}.cast-grid{grid-template-columns:repeat(2,1fr)}.cast-portrait{width:88px;height:88px}.recap-panels{grid-template-columns:1fr}.coming-grid{grid-template-columns:1fr 1fr}.story-merch-grid{grid-template-columns:1fr 1fr}.merch-image{height:190px}.section-row-title{align-items:flex-start}.cast-profile h2{font-size:46px}
 }
+/* Real Rage Bait Universe character assets */
+.hero-character.kingpin .hero-character-art{background-image:url("story-assets/characters/heroes/kingpin-hero.png");background-size:contain;background-position:center bottom}
+.hero-character.minorz .hero-character-art{background-image:url("story-assets/characters/heroes/minorz-hero.png");background-size:contain;background-position:center bottom}
+.hero-character.littlemac .hero-character-art{background-image:url("story-assets/characters/heroes/littlemac-hero.png");background-size:contain;background-position:center bottom}
+.hero-character.ragz .hero-character-art{background-image:url("story-assets/characters/heroes/ragz-hero.png");background-size:contain;background-position:center bottom}
+.hero-character.wizz .hero-character-art{background-image:url("story-assets/characters/heroes/wizz-hero.png");background-size:contain;background-position:center bottom}
+.hero-character.scab .hero-character-art{background-image:url("story-assets/characters/heroes/scab-hero.png");background-size:contain;background-position:center bottom}
+.hero-character.wizz .hero-character-art span,.hero-character.scab .hero-character-art span{display:none}
+
+.cast-card[data-cast="kingpin"] .cast-portrait{background-image:url("story-assets/characters/portraits/kingpin-portrait.png")}
+.cast-card[data-cast="minorz"] .cast-portrait{background-image:url("story-assets/characters/portraits/minorz-portrait.png")}
+.cast-card[data-cast="littlemac"] .cast-portrait{background-image:url("story-assets/characters/portraits/littlemac-portrait.png");background-position:center;background-size:cover}
+.cast-card[data-cast="wizz"] .cast-portrait{background-image:url("story-assets/characters/portraits/wizz-portrait.png")}
+.cast-card[data-cast="ragz"] .cast-portrait{background-image:url("story-assets/characters/portraits/ragz-portrait.png")}
+.cast-card[data-cast="scab"] .cast-portrait{background-image:url("story-assets/characters/portraits/scab-portrait.png")}
+.cast-card .cast-portrait{background-size:cover;background-position:center}
+.cast-card .cast-portrait.cast-placeholder{font-size:0}
