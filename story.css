@@ -138,3 +138,180 @@
 .cast-card[data-cast="scab"] .cast-portrait{background-image:url("story-assets/characters/portraits/scab-portrait.png")}
 .cast-card .cast-portrait{background-size:cover;background-position:center}
 .cast-card .cast-portrait.cast-placeholder{font-size:0}
+
+
+/* Comic-cover concept hero */
+.concept-hero{
+  min-height:620px;
+  padding:42px 3.5vw 28px;
+  grid-template-columns:minmax(330px,.82fr) minmax(620px,1.55fr);
+  gap:6px;
+  align-items:center;
+  background:
+    linear-gradient(90deg,rgba(0,0,0,.92) 0 29%,rgba(0,0,0,.68) 47%,rgba(0,0,0,.16) 72%),
+    radial-gradient(circle at 73% 40%,rgba(0,255,180,.17),transparent 26%),
+    radial-gradient(circle at 52% 55%,rgba(255,104,0,.22),transparent 25%),
+    #070807;
+  isolation:isolate;
+}
+.concept-hero::before{
+  background:
+    linear-gradient(112deg,transparent 0 30%,rgba(255,100,18,.12) 30% 31%,transparent 31%),
+    repeating-linear-gradient(0deg,transparent 0 37px,rgba(255,255,255,.018) 38px),
+    radial-gradient(circle at 20% 20%,rgba(147,255,0,.06),transparent 23%);
+}
+.concept-copy{z-index:12;align-self:center;max-width:560px}
+.concept-copy .paint-kicker{
+  font-size:clamp(31px,3vw,50px);
+  line-height:.9;
+  margin-bottom:4px;
+  text-shadow:3px 3px 0 #000;
+}
+.concept-copy h1{
+  font-size:clamp(76px,8.4vw,142px);
+  line-height:.74;
+  margin:0 0 22px;
+  text-shadow:5px 5px 0 #020202;
+}
+.concept-copy h1 span{
+  color:var(--rb-green);
+  text-shadow:4px 4px 0 #050505,-2px -2px 0 rgba(147,255,0,.12);
+}
+.concept-copy .hero-intro{font-size:14px;line-height:1.48;max-width:500px;color:#e2e5df}
+.concept-copy .origin-line{font-size:13px}
+.concept-copy .origin-sub{font-size:13px;margin-bottom:12px}
+.concept-cast{
+  position:relative;
+  min-height:565px;
+  align-self:end;
+  margin-left:-22px;
+  z-index:4;
+  overflow:visible;
+}
+.concept-cast::before{
+  content:"";
+  position:absolute;
+  inset:8% 0 0 3%;
+  z-index:-5;
+  background:
+    linear-gradient(100deg,rgba(255,98,12,.18),transparent 35%),
+    linear-gradient(160deg,transparent 30%,rgba(37,217,255,.14) 65%,transparent 85%);
+  clip-path:polygon(4% 12%,94% 0,100% 88%,18% 100%,0 68%);
+  filter:contrast(1.2);
+}
+.concept-burst{position:absolute;z-index:-3;filter:blur(.2px);opacity:.92;pointer-events:none}
+.burst-orange{
+  left:3%;top:6%;width:43%;height:83%;
+  background:
+    radial-gradient(circle at 30% 35%,rgba(255,100,18,.55),transparent 18%),
+    repeating-linear-gradient(105deg,transparent 0 17px,rgba(255,100,18,.22) 18px 22px,transparent 23px 42px);
+  transform:skew(-8deg);
+}
+.burst-green{
+  left:36%;top:0;width:40%;height:96%;
+  background:radial-gradient(circle at 42% 38%,rgba(147,255,0,.24),transparent 43%);
+}
+.burst-cyan{
+  right:0;top:0;width:34%;height:98%;
+  background:radial-gradient(circle at 70% 28%,rgba(37,217,255,.23),transparent 42%);
+}
+.concept-character{
+  position:absolute;
+  margin:0;
+  z-index:4;
+  filter:drop-shadow(0 12px 9px rgba(0,0,0,.92));
+}
+.concept-character img{
+  display:block;
+  width:100%;
+  height:auto;
+  object-fit:contain;
+  object-position:center bottom;
+}
+.concept-character figcaption{
+  position:absolute;
+  z-index:18;
+  width:max-content;
+  max-width:150px;
+  font-family:Anton,sans-serif;
+  line-height:.9;
+  text-transform:uppercase;
+  text-shadow:2px 2px 0 #000,0 0 5px #000;
+  pointer-events:none;
+}
+.concept-character figcaption strong{display:block;font-size:25px;letter-spacing:.02em}
+.concept-character figcaption span{display:block;margin-top:3px;font-family:Inter,sans-serif;font-size:9px;line-height:1.05;font-weight:900;color:#fff}
+.cc-kingpin{width:35%;left:28%;bottom:-2%;z-index:7}
+.cc-kingpin figcaption{left:-12%;top:12%;transform:rotate(-7deg);color:var(--rb-orange)}
+.cc-minorz{width:31%;left:2%;bottom:-5%;z-index:8}
+.cc-minorz figcaption{left:19%;top:28%;transform:rotate(-5deg);color:var(--rb-green)}
+.cc-littlemac{width:30%;right:12%;top:0;z-index:8}
+.cc-littlemac figcaption{right:-16%;top:15%;transform:rotate(5deg);text-align:left;color:var(--rb-green)}
+.cc-ragz{width:25%;left:43%;bottom:-10%;z-index:10}
+.cc-ragz figcaption{left:-28%;top:27%;transform:rotate(-4deg);color:var(--rb-green)}
+.cc-wizz{width:25%;right:-1%;bottom:-6%;z-index:9}
+.cc-wizz figcaption{right:1%;top:31%;transform:rotate(4deg);text-align:right;color:#c56cff}
+.cc-scab{width:20%;right:23%;bottom:-9%;z-index:11}
+.cc-scab figcaption{left:55%;top:44%;transform:rotate(-3deg);color:var(--rb-orange)}
+.concept-graffiti-note{
+  position:absolute;
+  right:1%;top:2%;
+  z-index:20;
+  color:#e6e9e3;
+  font-family:Anton,sans-serif;
+  font-size:16px;
+  line-height:.9;
+  transform:rotate(-7deg);
+  opacity:.82;
+  text-shadow:2px 2px 0 #000;
+}
+.concept-crown{
+  position:absolute;
+  top:1%;left:47%;
+  z-index:1;
+  color:var(--rb-green);
+  font-size:80px;
+  line-height:1;
+  transform:rotate(8deg);
+  opacity:.8;
+  text-shadow:0 0 12px rgba(147,255,0,.35);
+}
+.concept-hero + .ripped-divider{
+  height:24px;
+  margin-top:-2px;
+  background:
+    linear-gradient(137deg,#050605 0 38%,#e9ece5 39% 48%,#050605 49% 100%);
+  background-size:34px 24px;
+  position:relative;
+  z-index:30;
+}
+
+@media(max-width:1180px){
+  .concept-hero{grid-template-columns:.9fr 1.1fr;min-height:650px}
+  .concept-cast{min-height:535px}
+  .cc-kingpin{width:39%;left:25%}
+  .cc-littlemac{width:32%;right:4%}
+  .cc-minorz{width:34%;left:-2%}
+  .cc-wizz{width:27%;right:-3%}
+}
+@media(max-width:900px){
+  .concept-hero{grid-template-columns:1fr;padding-top:34px;min-height:auto}
+  .concept-copy{max-width:680px}
+  .concept-cast{min-height:590px;margin:0}
+}
+@media(max-width:620px){
+  .concept-hero{padding:28px 4vw 10px}
+  .concept-copy h1{font-size:64px}
+  .concept-copy .hero-intro{font-size:12px}
+  .concept-cast{min-height:430px;margin-top:10px}
+  .cc-kingpin{width:42%;left:25%;bottom:0}
+  .cc-minorz{width:38%;left:-5%;bottom:-3%}
+  .cc-littlemac{width:35%;right:0;top:1%}
+  .cc-ragz{width:29%;left:42%;bottom:-5%}
+  .cc-wizz{width:29%;right:-5%;bottom:-3%}
+  .cc-scab{width:24%;right:21%;bottom:-4%}
+  .concept-character figcaption strong{font-size:17px}
+  .concept-character figcaption span{font-size:7px}
+  .concept-graffiti-note{display:none}
+  .concept-crown{font-size:56px;left:45%}
+}
