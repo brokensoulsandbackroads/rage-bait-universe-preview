@@ -3,14 +3,14 @@ name: Build Hero Banner
 on:
   push:
     paths:
-      - '.hero-build/part15.txt'
+      - '.hero-build/part09.txt'
 
 permissions:
   contents: write
 
 jobs:
   build:
-    if: ${{ hashFiles('.hero-build/part15.txt') != '' }}
+    if: ${{ hashFiles('.hero-build/part09.txt') != '' }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
