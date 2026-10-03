@@ -1,0 +1,31 @@
+name: Build Hero Banner
+
+on:
+  push:
+    paths:
+      - '.hero-build/part15.txt'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    if: ${{ hashFiles('.hero-build/part15.txt') != '' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Rebuild banner asset
+        run: |
+          mkdir -p story-assets
+          cat .hero-build/part*.txt | tr -d '\n' | base64 -d > story-assets/rage-bait-universe-hero.avif
+          rm -rf .hero-build
+
+      - name: Commit banner
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add story-assets/rage-bait-universe-hero.avif .hero-build
+          git commit -m "Add final Rage Bait Universe hero banner"
+          git push
