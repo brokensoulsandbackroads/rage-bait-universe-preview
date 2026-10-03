@@ -315,3 +315,247 @@
   .concept-graffiti-note{display:none}
   .concept-crown{font-size:56px;left:45%}
 }
+
+
+
+/* v2: match original concept banner much more literally */
+.universe-header{
+  position:absolute!important;
+  top:0;left:0;right:0;
+  z-index:80;
+  height:52px!important;
+  padding:0 2.2vw!important;
+  background:rgba(2,3,2,.93)!important;
+  border-bottom:1px solid rgba(255,255,255,.12)!important;
+  backdrop-filter:blur(2px);
+}
+.universe-logo img{height:42px!important}
+.universe-nav{gap:24px!important}
+.universe-nav a{font-size:10px!important}
+.shop-pill{display:none!important}
+
+.concept-hero{
+  min-height:540px!important;
+  padding:76px 1.9vw 18px!important;
+  grid-template-columns:31% 69%!important;
+  gap:0!important;
+  align-items:stretch!important;
+  overflow:hidden!important;
+  background:
+    linear-gradient(90deg,rgba(0,0,0,.96) 0 27%,rgba(0,0,0,.72) 39%,rgba(0,0,0,.14) 62%,rgba(0,0,0,.05) 100%),
+    linear-gradient(180deg,rgba(13,95,88,.38),rgba(2,4,3,.25) 56%,rgba(0,0,0,.86) 100%),
+    #050605!important;
+}
+.concept-hero::before{
+  content:""!important;
+  position:absolute!important;
+  inset:0!important;
+  z-index:0!important;
+  background:
+    repeating-linear-gradient(90deg,transparent 0 54px,rgba(0,255,225,.05) 55px 57px),
+    repeating-linear-gradient(0deg,transparent 0 36px,rgba(255,255,255,.022) 37px 39px),
+    linear-gradient(103deg,transparent 0 34%,rgba(255,92,0,.18) 34% 35%,transparent 35% 43%,rgba(147,255,0,.09) 43% 44%,transparent 44% 100%)!important;
+  opacity:1!important;
+}
+.concept-hero::after{
+  content:""!important;
+  position:absolute!important;
+  left:27%;right:-2%;top:45px;bottom:0;
+  z-index:1;
+  background:
+    linear-gradient(90deg,transparent 0 4%,rgba(255,90,0,.18) 4% 12%,transparent 12% 100%),
+    repeating-linear-gradient(90deg,rgba(7,18,17,.45) 0 38px,rgba(11,31,28,.26) 39px 56px,transparent 57px 78px),
+    repeating-linear-gradient(0deg,transparent 0 44px,rgba(36,217,255,.05) 45px 48px);
+  clip-path:polygon(0 8%,100% 0,100% 100%,0 100%);
+  pointer-events:none;
+}
+
+.concept-copy{
+  position:relative!important;
+  z-index:30!important;
+  max-width:none!important;
+  padding:0 0 0 .2vw!important;
+  align-self:start!important;
+}
+.concept-copy .paint-kicker{
+  margin:0 0 3px!important;
+  font-size:clamp(25px,2.45vw,39px)!important;
+  line-height:.88!important;
+  transform:rotate(-1deg)!important;
+}
+.concept-copy h1{
+  margin:0 0 15px!important;
+  font-size:clamp(58px,6.4vw,96px)!important;
+  line-height:.72!important;
+  letter-spacing:-.025em!important;
+  transform:skew(-4deg) rotate(-1deg)!important;
+}
+.concept-copy h1 span{
+  display:inline-block;
+  filter:drop-shadow(3px 3px 0 #000);
+}
+.concept-copy .origin-line{
+  font-size:11px!important;
+  margin-bottom:2px!important;
+}
+.concept-copy .origin-sub{
+  font-size:10px!important;
+  margin-bottom:8px!important;
+}
+.concept-copy .hero-intro{
+  max-width:330px!important;
+  font-size:9px!important;
+  line-height:1.28!important;
+  font-weight:700!important;
+  color:#f0f2ed!important;
+}
+.concept-copy .hero-buttons{margin-top:12px!important}
+.concept-copy .comic-button{
+  min-height:30px!important;
+  padding:0 14px!important;
+  font-size:9px!important;
+  background:#fff!important;
+  color:#080908!important;
+  box-shadow:none!important;
+  transform:rotate(-1deg)!important;
+}
+
+.concept-cast{
+  min-height:462px!important;
+  margin-left:-3.5vw!important;
+  margin-top:-4px!important;
+  z-index:10!important;
+  overflow:visible!important;
+}
+.concept-cast::before{
+  inset:0!important;
+  clip-path:none!important;
+  background:
+    radial-gradient(circle at 30% 38%,rgba(255,102,0,.33),transparent 25%),
+    radial-gradient(circle at 78% 24%,rgba(37,217,255,.22),transparent 28%),
+    radial-gradient(circle at 56% 40%,rgba(147,255,0,.11),transparent 31%)!important;
+}
+.concept-burst{opacity:1!important}
+.burst-orange{
+  left:0!important;top:2%!important;width:42%!important;height:93%!important;
+  background:
+    radial-gradient(circle at 28% 38%,rgba(255,93,0,.72),transparent 19%),
+    repeating-linear-gradient(102deg,transparent 0 11px,rgba(255,96,0,.2) 12px 17px,transparent 18px 34px)!important;
+}
+.burst-green{
+  left:24%!important;top:0!important;width:52%!important;height:100%!important;
+  background:radial-gradient(circle at 55% 28%,rgba(147,255,0,.22),transparent 43%)!important;
+}
+.burst-cyan{
+  right:-2%!important;top:-2%!important;width:42%!important;height:100%!important;
+  background:radial-gradient(circle at 65% 20%,rgba(37,217,255,.28),transparent 43%)!important;
+}
+
+.concept-character{filter:drop-shadow(0 8px 7px rgba(0,0,0,.98))!important}
+.concept-character img{width:100%!important;height:auto!important;max-width:none!important}
+
+.cc-kingpin{
+  width:39%!important;
+  left:28%!important;
+  bottom:-13%!important;
+  z-index:12!important;
+}
+.cc-kingpin img{transform:scale(1.12);transform-origin:center bottom}
+.cc-minorz{
+  width:34%!important;
+  left:3%!important;
+  bottom:-16%!important;
+  z-index:13!important;
+}
+.cc-minorz img{transform:scale(1.08);transform-origin:center bottom}
+.cc-littlemac{
+  width:31%!important;
+  right:8%!important;
+  top:-5%!important;
+  z-index:13!important;
+}
+.cc-littlemac img{transform:scale(1.1);transform-origin:center top}
+.cc-ragz{
+  width:24%!important;
+  left:45%!important;
+  bottom:-15%!important;
+  z-index:15!important;
+}
+.cc-ragz img{transform:scale(1.14);transform-origin:center bottom}
+.cc-scab{
+  width:19%!important;
+  right:23%!important;
+  bottom:-14%!important;
+  z-index:16!important;
+}
+.cc-scab img{transform:scale(1.1);transform-origin:center bottom}
+.cc-wizz{
+  width:27%!important;
+  right:-2%!important;
+  bottom:-12%!important;
+  z-index:14!important;
+}
+.cc-wizz img{transform:scale(1.1);transform-origin:center bottom}
+
+.concept-character figcaption{
+  max-width:110px!important;
+  text-shadow:2px 2px 0 #000,0 0 6px #000!important;
+}
+.concept-character figcaption strong{
+  font-size:21px!important;
+  line-height:.8!important;
+}
+.concept-character figcaption span{
+  margin-top:2px!important;
+  font-size:7px!important;
+  line-height:1!important;
+}
+.cc-kingpin figcaption{left:-4%!important;top:7%!important;transform:rotate(-7deg)!important}
+.cc-minorz figcaption{left:17%!important;top:53%!important;transform:rotate(-7deg)!important}
+.cc-littlemac figcaption{right:-8%!important;top:18%!important;transform:rotate(5deg)!important}
+.cc-ragz figcaption{left:-22%!important;top:40%!important;transform:rotate(-7deg)!important}
+.cc-scab figcaption{left:56%!important;top:48%!important;transform:rotate(-4deg)!important}
+.cc-wizz figcaption{right:3%!important;top:51%!important;transform:rotate(5deg)!important}
+
+.concept-graffiti-note{
+  right:1%!important;
+  top:1%!important;
+  font-size:12px!important;
+  line-height:.86!important;
+}
+.concept-crown{
+  top:-2%!important;
+  left:48%!important;
+  font-size:66px!important;
+  opacity:.9!important;
+}
+
+.concept-hero + .ripped-divider{
+  height:20px!important;
+  margin-top:-1px!important;
+  background:
+    linear-gradient(136deg,#050605 0 40%,#f0f0ea 41% 50%,#050605 51% 100%)!important;
+  background-size:29px 20px!important;
+}
+
+@media(max-width:1050px){
+  .concept-hero{grid-template-columns:35% 65%!important}
+  .concept-copy .hero-intro{max-width:300px!important}
+}
+@media(max-width:900px){
+  .universe-header{position:relative!important}
+  .concept-hero{grid-template-columns:1fr!important;padding-top:24px!important}
+  .concept-copy{padding:0 3vw!important}
+  .concept-copy .hero-intro{max-width:520px!important}
+  .concept-cast{min-height:500px!important;margin:0!important}
+}
+@media(max-width:620px){
+  .concept-copy h1{font-size:60px!important}
+  .concept-cast{min-height:420px!important}
+  .cc-kingpin{width:43%!important;left:25%!important}
+  .cc-minorz{width:37%!important;left:-1%!important}
+  .cc-littlemac{width:34%!important;right:0!important}
+  .cc-ragz{width:27%!important;left:42%!important}
+  .cc-scab{width:22%!important;right:20%!important}
+  .cc-wizz{width:30%!important;right:-4%!important}
+}
